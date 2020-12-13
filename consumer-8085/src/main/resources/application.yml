@@ -1,0 +1,28 @@
+server:
+# 服务端口
+ port: 8085
+
+eureka:
+  instance:
+#    hostname: localhost
+    # 指定当前client 在注册中心名称
+#    instance-id:  mxkmsc-consumer-depart-8080
+  # 指定注册中心地址
+  client:
+   service-url:
+#     defaultZone: http://localhost:8000/eureka/   #单体
+     defaultZone: http://eureka8100:8100/eureka/,http://eureka8200:8200/eureka/,http://eureka8300:8300/eureka/  #集群
+
+spring:
+# 服务名称
+ application:
+   name: consumer-service
+
+#Eureka 工作页面中 instance-id处链接的信息
+info:
+  company.name: www.mxk.com
+  company.addr: China Chongqing
+  company.tel: 123456789
+  app.name: mxk-eu
+  app.desc: eu-client-cloud
+  suthor: mxk
