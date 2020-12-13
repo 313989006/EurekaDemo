@@ -1,0 +1,32 @@
+server:
+  port: 8100
+
+#spring:
+#  main:
+#    allow-bean-definition-overriding: true
+eureka:
+  instance:
+    hostname: eureka8100   # 指定 Eureka主机
+  client:
+    # register-with-eureka，fetch-registry 默认为 true
+    register-with-eureka: false   # 指定是否需要注册到Eureka注册中心
+    fetch-registry: false   # 指定是否需要从Eureka 注册中心获取注册列表
+    service-url:    # 暴露服务地址
+#      default-zone: http://localhost:8000/eureka
+      defaultZone: http://eureka8200:8200/eureka/,http://eureka8300:8300/eureka/
+#  server:
+#    # 设置自我保护机制的开启阈值
+#    renewal-percent-threshold: 0.75   # 阈值。默认 0.85
+#    # 关闭自我保护机制（最好不要关）
+#    #    enable-self-preservation: false
+#    # 设置服务器剔除不可用服务的时间窗
+#    eviction-interval-timer-in-ms: 4000
+
+#Eureka 工作页面中 instance-id处链接的信息
+info:
+  company.name: www.mxk.com
+  company.addr: China Chongqing
+  company.tel: 123456789
+  app.name: mxk-eu
+  app.desc: eu-server-cloud
+  suthor: mxk
