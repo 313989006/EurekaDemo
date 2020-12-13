@@ -8,7 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/eurekaserver-8100/eurekaserver-8100.iml" filepath="$PROJECT_DIR$/eurekaserver-8100/eurekaserver-8100.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver-8200/eurekaserver-8200.iml" filepath="$PROJECT_DIR$/eurekaserver-8200/eurekaserver-8200.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver-8300/eurekaserver-8300.iml" filepath="$PROJECT_DIR$/eurekaserver-8300/eurekaserver-8300.iml" />
-      <module fileurl="file://$PROJECT_DIR$/product_service/product_service.iml" filepath="$PROJECT_DIR$/product_service/product_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_service-8082/product_service-8082.iml" filepath="$PROJECT_DIR$/product_service-8082/product_service-8082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_service-8083/product_service-8083.iml" filepath="$PROJECT_DIR$/product_service-8083/product_service-8083.iml" />
     </modules>
   </component>
 </project>

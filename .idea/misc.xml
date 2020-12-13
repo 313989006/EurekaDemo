@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/eurekaserver-8100/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaserver-8200/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaserver-8300/pom.xml" />
+        <option value="$PROJECT_DIR$/product_service-8082/pom.xml" />
+        <option value="$PROJECT_DIR$/product_service-8083/pom.xml" />
       </list>
     </option>
   </component>

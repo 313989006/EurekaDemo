@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductServiceApplication {
+public class ProductService8081Application {
 
 //    public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class ProductServiceApplication {
 //                .properties("server.port=" + port).run(args);
 //    }
     public static void main(String[] args) {
-        SpringApplication.run(ProductServiceApplication.class, args);
+        SpringApplication.run(ProductService8081Application.class, args);
     }
 
 }

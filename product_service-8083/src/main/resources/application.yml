@@ -1,0 +1,42 @@
+server:
+# 服务端口
+ port: 8083
+
+#单体 eureka
+#eureka:
+#  instance:
+#    hostname: localhost
+#    # 指定当前client 在注册中心名称
+##    instance-id:  mxkmsc-providor-depart-8081
+#   # 设置客户端每一秒向服务端发送一次心跳
+##   lease-renewal-interval-in-seconds: 1
+#   # 设置客户端多长时间没向服务端发送心跳，就可以让服务端认为当前客户端已经挂了
+##   lease-expiration-duration-in-seconds: 3
+#  # 指定注册中心地址
+#  client:
+#   service-url:
+#     defaultZone: http://localhost:8100/eureka/
+#集群
+eureka:
+  instance:
+    hostname: localhost  #eureka客户端主机实例名称
+    appname: mxkmsc-providor-depart  #客户端服务名
+    instance-id: mxkmsc-providor-depart-8083 #客户端实例名称
+    prefer-ip-address: true #显示IP
+  client:
+    service-url:
+      defaultZone: http://eureka8100:8100/eureka/,http://eureka8200:8200/eureka/,http://eureka8300:8300/eureka/
+
+spring:
+# 服务名称
+ application:
+   name: product-service-8083
+
+#Eureka 工作页面中 instance-id处链接的信息
+info:
+  company.name: www.mxk.com
+  company.addr: China Chongqing
+  company.tel: 123456789
+  app.name: mxk-eu
+  app.desc: eu-server-cloud
+  suthor: mxk
