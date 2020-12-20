@@ -1,0 +1,24 @@
+server:
+# 服务端口
+ port: 8090
+
+eureka:
+  instance:
+#    hostname: localhost
+    # 指定当前client 在注册中心名称
+#    instance-id:  mxkmsc-consumer-depart-8080
+  # 指定注册中心地址
+  client:
+   service-url:
+     defaultZone: http://localhost:8000/eureka/
+
+spring:
+# 服务名称
+ application:
+   name: mxkmsc-providor-depart
+
+# 设置负载均衡策略为随机策略
+product-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+

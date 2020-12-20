@@ -20,7 +20,7 @@ public class ProductServiceImpl implements ProductService {
 
     static {
         Product p1= new Product(1,"iphonex",9999,10);
-        Product p2= new Product(2,"冰箱",6666,120);
+        Product p2= new Product(2,"冰箱333",6666,120);
         Product p3= new Product(3,"电话",122,130);
         Product p4= new Product(4,"电视",1999,150);
         Product p5= new Product(5,"茶杯",10,110);
@@ -45,6 +45,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product findById(Integer id) {
-        return daoMap.get(id);
+        Product product = new Product();
+        product.setName("冰箱333");
+        product.setPrice(333);
+        product.setStore(333);
+        return product;
     }
 }

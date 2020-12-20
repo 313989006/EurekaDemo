@@ -6,21 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="product_service-8082" />
+        <module name="consumer" />
         <module name="eurekaserver-8300" />
-        <module name="eurekaserver-8100" />
+        <module name="product_service-8082" />
         <module name="product_service-8083" />
+        <module name="eurekaserver-8100" />
         <module name="eureka" />
         <module name="eurekaserver-8200" />
-        <module name="consumer" />
+        <module name="consumer-loadBalance-8090" />
+        <module name="product_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumer" target="1.8" />
+      <module name="consumer-loadBalance-8090" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="eurekaserver-8100" target="1.8" />
       <module name="eurekaserver-8200" target="1.8" />
       <module name="eurekaserver-8300" target="1.8" />
+      <module name="product_service" target="1.8" />
       <module name="product_service-8081" target="1.8" />
       <module name="product_service-8082" target="1.8" />
       <module name="product_service-8083" target="1.8" />
@@ -29,10 +33,12 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer" options="-parameters" />
+      <module name="consumer-loadBalance-8090" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eurekaserver-8100" options="-parameters" />
       <module name="eurekaserver-8200" options="-parameters" />
       <module name="eurekaserver-8300" options="-parameters" />
+      <module name="product_service" options="-parameters" />
       <module name="product_service-8081" options="-parameters" />
       <module name="product_service-8082" options="-parameters" />
       <module name="product_service-8083" options="-parameters" />

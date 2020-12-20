@@ -45,6 +45,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product findById(Integer id) {
-        return daoMap.get(id);
+        Product product = new Product();
+        product.setName("冰箱111");
+        product.setPrice(111);
+        product.setStore(111);
+        return product;
     }
 }
