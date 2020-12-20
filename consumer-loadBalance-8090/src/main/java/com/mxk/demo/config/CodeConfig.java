@@ -1,9 +1,14 @@
 package com.mxk.demo.config;
 
+import com.mxk.demo.rule.CustomRule;
+import com.netflix.loadbalancer.IRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @ClassName CodeConfig
@@ -21,4 +26,12 @@ public class CodeConfig {
 //    public RestTemplate restTemplate(){
 //        return new RestTemplate();
 //    }
+
+    // 指定自定义负载均衡策略
+    @Bean
+    public IRule loadBalanceRule(){
+        List<Integer> ports = new ArrayList<>();
+        ports.add(8083);
+        return new CustomRule(ports);
+    }
 }

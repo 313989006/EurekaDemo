@@ -5,6 +5,7 @@ package com.mxk.demo.service;
 import com.mxk.demo.domain.Consumer;
 import com.mxk.demo.domain.Product;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
 */
 // @FeignClient 指定该客户端要访问的提供者微服务名称
 @FeignClient("product-service")
+@Service
 @RequestMapping("/provider/product")
 public interface ProductService {
 
